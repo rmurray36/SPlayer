@@ -13,18 +13,12 @@
         .state('home', {
             url: '/home',
             templateUrl: 'splayer.html',
-            controller: 'ItemRowController as IRC',
+            controller: 'PlayerController as IRC',
             resolve:{
-                // rowItems: [
-                //     'SermonService',
-                //     function (SermonService) {
-                //         return SermonService.getSermonInfo();
-                //     }
-                // ]
                 rowItems: [
-                    'MockSermonService',
-                    function (MockSermonService) {
-                        return MockSermonService.getSermonInfo();
+                    'SermonService',
+                    function (SermonService) {
+                        return SermonService.retrieveSermonListFromServer();
                     }
                 ]
 

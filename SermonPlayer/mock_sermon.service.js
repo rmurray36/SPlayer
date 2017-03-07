@@ -9,9 +9,9 @@
     function MockSermonService($http, $q)
     {
         var service = this;
-        service.sermonInfo = [];
+        service.sermons = [];
 
-        service.getSermonInfo = function ()
+        service.loadSermonInfo = function ()
         {
             var rowItems = [];
             var info = new Object();
@@ -20,7 +20,7 @@
             sermon.title = "Title-A";
             sermon.speaker = "Speaker-A";
             sermon.date = "3/3/2017";
-            sermon.file = "horse.ogg";
+            sermon.file = "EnarRom11192016.mp3";
             data.sermon = sermon;
             info.data = data;
             rowItems.push(info);
@@ -31,6 +31,18 @@
             return p.promise;
         };
 
+        service.setSermonInfo = function(title,speaker,date,filename){
+            var sermon = new Object();
+            sermon.title = title;
+            sermon.speaker = speaker;
+            sermon.date = date;
+            sermon.filename = filename;
+            service.sermons.push(sermon);
+        }
+
+        service.getSermonInfo = function() {
+            return service.sermons.pop();
+        }
     }
 
 })();
