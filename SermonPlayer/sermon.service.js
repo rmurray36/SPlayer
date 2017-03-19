@@ -28,19 +28,6 @@
             return service.sermons;
         }
 
-        service.setSermonInfo = function(title,speaker,date,filename){
-            var sermon = new Object();
-            sermon.title = title;
-            sermon.speaker = speaker;
-            sermon.date = date;
-            sermon.filename = filename;
-            service.sermons.push(sermon);
-        }
-
-        service.getSermonInfo = function() {
-            return service.sermons.pop();
-        }
-
     }
 
 })();
