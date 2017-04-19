@@ -2,26 +2,13 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
       <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-      <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-      <link href="home.css" rel="stylesheet" type="text/css">
-
-
-
+      <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
   </head>
   <body >
-      <div class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-                TEST
-                <ui-view></ui-view>
-                <!-- Loading... <a ui-sref="splayer">GO!</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <ui-view></ui-view>
 
       <!-- Libs -->
       <script src="lib/jquery-2.1.4.min.js"></script>
@@ -29,19 +16,17 @@
       <script src="lib/angular-ui-router.min.js"></script>
       <script src="lib/bootstrap.min.js"></script>
 
-      <script src="sermonplayer.module.js"></script>
-      <script src="sp-routes.js"></script>
+      <script src="js/sermonplayer.module.js"></script>
+      <script src="js/sp-routes.js"></script>
 
-      <script src="sp-header-row.component.js"></script>
-      <script src="sermon.service.js"></script>
-      <script src="mock_sermon.service.js"></script>
-      <script src="sp-player.controller.js"></script>
-      <script src="sp-item-row.controller.js"></script>
-      <script src="sp-item-row.component.js"></script>
-      <script src="sp-audio-src.directive.js"></script>
+      <script src="js/sp-header-row.component.js"></script>
+      <script src="js/sermon.service.js"></script>
+      <script src="js/mock_sermon.service.js"></script>
+      <script src="js/sp-player.controller.js"></script>
+      <!-- <script src="js/sp-item-row.controller.js"></script> -->
+      <script src="js/sp-item-row.component.js"></script>
+      <script src="js/sp-audio-src.directive.js"></script>
 
   </body>
-
-
 
 </html>
