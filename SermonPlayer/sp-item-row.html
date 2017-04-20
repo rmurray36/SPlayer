@@ -1,19 +1,20 @@
-
 <!-- Responseive version    -->
-    <!-- <div class="row" ng-repeat="item in $ctrl.getSermonListInfo()">
-          <div class="col-xs-3">{{item.title}}</div>
-          <div class="col-xs-2">{{item.speaker}}</div>
-          <div class="col-xs-1">{{item.date}}</div>
-          <div class="col-xs-6">
-              <div>
-                  <audio id="spcontrols" controls>
-                      <source src="" ng-src="{{item.filename}}" type="audio/mpeg">
-                      Your browser does not support the audio element.
-                  </audio>
-              </div>
+<div class="row borders" ng-repeat="item in $ctrl.getSermonListInfo()">
+      <div class="col-xs-1" style="height:35px;border-bottom:1px solid #999">{{item.date}}</div>
+      <div class="col-xs-3" style="height:35px;border-bottom:1px solid #999">{{item.title}}</div>
+      <div class="col-xs-2" style="height:35px;border-bottom:1px solid #999">{{item.speaker}}</div>
+      <div class="col-xs-6" style="height:35px;border-bottom:1px solid #999">
+          <div>
+              <audio controls>
+                  <source src="" ng-src="{{item.filename}}" type="audio/mpeg">
+                  Your browser does not support the audio element.
+              </audio>
           </div>
-    </div> -->
+      </div>
+</div>
 
+
+<!-- THE FOLLOWING USES HTML TABLE
 <STYLE TYPE="text/css">
     TD{font-family: Calibri; font-size: 10pt;}
     TR{font-family: Calibri; font-size: 12pt;}
@@ -44,4 +45,4 @@
             </tbody>
         </table>
     </div>
-</div>
+</div> -->
